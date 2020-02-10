@@ -182,3 +182,9 @@ TINYMCE_DEFAULT_CONFIG = {
     'contextmenu': 'formats | link image',
     'remove_linebreaks': False
 }
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
