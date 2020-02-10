@@ -1,0 +1,102 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/c73bb0f812.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'vendors/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/swiper.min.css' %}">
+    {% block head %}
+    <title>Home</title>
+    {% endblock head %}
+    <link rel='stylesheet' href='{% static "css/style.css" %}'>
+    </link>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <nav>
+            <div class="logo">
+                <a href="{% url 'leptitox:home' %}">LOGO</a>
+            </div>
+            <ul class="navbar" id="sidenav">
+                <li class="navbar-item"><a href="{% url 'leptitox:home' %}" class="navbar-link active">Home</a></li
+                    class="navbar-item">
+                <li class="navbar-item"><a href="{% url 'leptitox:about' %}" class="navbar-link">About us</a></li>
+                <li class="navbar-item"><a href="{% url 'contact:home' %}" class="navbar-link">Contact Us</a></li>
+                {% if user.username == 'njb_noor' %}
+                <li class="navbar-item"><a href="{% url 'newsletter:send_newsletter' %}" class="navbar-link">Send
+                        News</a></li>
+                {% endif %}
+            </ul>
+            <div class="burgers">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </nav>
+        <main>
+
+            {% block content %}
+
+            {% endblock content %}
+
+
+            <!--------------------------- Subscribe Form ------------------------>
+            <div class="newsletter-overlay">
+                <div class="newsletter">
+                    <span class="newsltr-close"><i class="fas fa-times"></i></span>
+                    <span class="enveloppe"><i class="fas fa-envelope-open"></i></span>
+                    <h1 class="title">Subscribe for our newsletter</h1>
+                    <form class="subscribe_form_popup" action="{% url 'newsletter:subscribe' %}" method="POST">
+                        {% csrf_token %}
+                        {{ subscribe_form }}
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+
+            <button class="newsletter-btn">
+                <i class="fas fa-envelope-open-text"></i>
+            </button>
+            <!--------------------------- Footer ------------------------>
+            <footer>
+                <div class="footer-inner">
+                    <p>
+                        *Disclaimer: The content on this website is provided for information purposes only, and such
+                        content is not intended to be used as, does not constitute, and should not be interpreted as
+                        professional
+                        advice.
+                        You should perform your own research and consult with a qualified professional. Individual
+                        results may vary.
+                    </p>
+                    <br>
+
+                    <p>
+                        NOTE: Products is a downloadable e-book, software, video. No physical products will be
+                        shipped.
+                        After
+                        you order, you will get INSTANT ACCESS to download them and all the bonuses. Products format
+                        is
+                        adobe
+                        acrobat PDF, software, video, which can be viewed on Mac, PC, iPad, iPhone, Android or
+                        Kindle.
+                    </p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="{% static 'vendors/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'vendors/swiper.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>

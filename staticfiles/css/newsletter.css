@@ -1,0 +1,164 @@
+.newsletter-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #204981;
+  color: #f3f3f3;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  z-index: 7 !important;
+  -webkit-box-shadow: 0 0 2px #f3f3f3;
+          box-shadow: 0 0 2px #f3f3f3;
+}
+
+.newsletter-btn.hide {
+  display: none;
+}
+
+.newsletter-overlay {
+  position: fixed;
+  right: 4rem;
+  top: 0;
+  left: 0;
+  bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  border-radius: 50%;
+  z-index: 4;
+  visibility: hidden;
+}
+
+.newsletter-overlay.active {
+  border-radius: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+}
+
+.newsletter-overlay .newsletter {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  max-width: 576px;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  background-color: #692081;
+  border-radius: 0.5rem;
+}
+
+.newsletter-overlay .newsletter .newsltr-close {
+  font-size: 1.5rem;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  color: #fff;
+  background-color: #692081;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #f3f3f3;
+}
+
+.newsletter-overlay .newsletter .newsltr-close:hover {
+  background-color: #371244;
+}
+
+.newsletter-overlay .newsletter .enveloppe {
+  display: block;
+  text-align: center;
+  font-size: 5rem;
+  color: #f3f3f3;
+}
+
+.newsletter-overlay .newsletter .title {
+  font-size: 1.5rem;
+  font-family: Rajdhani;
+  font-weight: 800;
+  color: #f3f3f3;
+  margin: 1rem 0;
+}
+
+.newsletter-overlay .newsletter form.subscribe_form_popup {
+  position: relative;
+}
+
+.newsletter-overlay .newsletter form.subscribe_form_popup label {
+  display: none;
+}
+
+.newsletter-overlay .newsletter #id_email {
+  width: 100%;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.7rem 1rem;
+  padding-right: 6rem;
+  font-size: 1rem;
+  color: #f3f3f3;
+}
+
+.newsletter-overlay .newsletter input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
+  font-family: Montserrat;
+  opacity: 0.5;
+}
+
+.newsletter-overlay .newsletter input[type="text"]:-ms-input-placeholder {
+  color: #fff;
+  font-family: Montserrat;
+  opacity: 0.5;
+}
+
+.newsletter-overlay .newsletter input[type="text"]::-ms-input-placeholder {
+  color: #fff;
+  font-family: Montserrat;
+  opacity: 0.5;
+}
+
+.newsletter-overlay .newsletter input[type="text"]::placeholder {
+  color: #fff;
+  font-family: Montserrat;
+  opacity: 0.5;
+}
+
+.newsletter-overlay .newsletter input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.7rem;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.newsletter-overlay .newsletter input[type="submit"]:hover {
+  background-color: #ccc;
+}
+/*# sourceMappingURL=newsletter.css.map */

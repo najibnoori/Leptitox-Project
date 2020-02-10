@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    box-shadow: 0 2px 3px rgb(129, 50, 32);
+    .logo {
+      margin-left: 4rem;
+    }
+    .navbar {
+      top: 0vh;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      transform: translateX(0%);
+      line-height: 5vh;
+      margin-right: 3rem;
+      .navbar-item {
+        opacity: 1;
+        .navbar-link {
+          padding: 0.2rem 0.5rem;
+          font-size: 1rem;
+          color: rgb(235, 196, 188);
+          &:hover {
+            color: #fff;
+          }
+        }
+        .active {
+          border-radius: 5px;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+    .burgers {
+      display: none;
+    }
+  }
+}

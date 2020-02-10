@@ -1,0 +1,1 @@
+web: gunicorn leptitox_pro.wsgi --log-file - 

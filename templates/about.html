@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+<div class="card card-about" style="width: 100%;">
+    <h1 class="card-title">
+        Morgan Hust
+    </h1>
+    <div class="card-inner">
+        <div class="card-header">
+            <img src="{% static 'imgs/morgan.jpg' %}" style="width: 100%;" alt="" class="card-img img-thumbnail">
+        </div>
+        <div class="card-content">
+            <div class="inner">
+                <p> Morgan Hurst is the one who created this supplement alongside other scientists to help
+                    people around the world to cure the disease.</p>
+
+                <p>Leptitox contains detoxifying substances, nutrients and plant extracts, which together
+                    lead to weight loss. </p>
+                <p>This is a 100% natural product and has the role of accelerating the burning of fat
+                    without causing unpleasant effects. This product is GMP certified and you don’t have to
+                    worry about the effects it might have.</p>
+                <p>Leptitox meets all standards so you can use it without problems.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

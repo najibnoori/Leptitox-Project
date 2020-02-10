@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+<main>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="slide1">
+                {% include 'include/message.html' %}
+                <div class="leptitox-pack hide-on-sm">
+                    <div class="leptitox-pack-inner">
+                        <img src="{% static 'imgs/1-bottle.webp' %}" alt="">
+                        <img src="{% static 'imgs/3-bottles.webp' %}" alt="">
+                        <img src="{% static 'imgs/6-bottles.png' %}" alt="">
+                    </div>
+                    <div class="logo-on-large">
+                        <img src="{% static 'imgs/logo-large.webp' %}">
+                    </div>
+                </div>
+                <img src="{% static 'imgs/6-bottles.png' %}" class="hide-on-large" alt="">
+                <img src="{% static 'imgs/logo-large.webp' %}" class="lep-logo hide-on-large" alt="">
+                <p class="hide-on-lg">The only formula that lasts only 5 seconds and <span class="highlight">kills food
+                        cravings</span> and melts 62 lbs of raw
+                    fat ... <a href="#about-leptitox">read more</a> </p>
+                <p class="hide-on-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit
+                    dolor
+                    similique
+                    explicabo est harum cum eligendi ad perferendis necessitatibus, laborum quia enim cumque
+                    itaque suscipit modi amet delectus praesentium.</p>
+                <br>
+                <div class="btns">
+                    <a href="https://084d3opgihrdvnc8lby5vc1vfv.hop.clickbank.net/" class="btn btn-large"><i
+                            class="fas fa-play-circle"></i> Watch Video</a>
+                    <a href="https://084d3opgihrdvnc8lby5vc1vfv.hop.clickbank.net/" class="btn btn-large blue"><i
+                            class="fas fa-cart-plus"></i> Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="slide2">
+                <h1>Ratings<span style="color: #204981;">&</span>Reviews </h1>
+                <br>
+                <div class="quote">
+                    <i class="fas fa-quote-left" id="quote-sign"></i>
+                    <h2 class="quote-title">Energy has increased, cravings have vanished!</h2>
+                    <p>
+                        It wasn't long until I started taking Leptitox that I noticed my cravings had vanished! The
+                        results are so promising, I've lost more weight than I have in a decade and I'm so excited to
+                        weigh myself every morning!
+                    </p>
+                    <p class="client-name">-Anne <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                </div>
+                <br>
+                <a href="#reviews" class="btn btn-large mt-3"><i class="fas fa-receipt"></i> Hear more ...</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="slide3">
+                <p>
+                    <i class="fas fa-check-square"></i> Scientifically Proven
+                </p>
+                <p>
+                    <i class="fas fa-check-square"></i> 60-Day Money Back Guarantee
+                </p>
+                <p>
+                    <i class="fas fa-check-square"></i> 100% Natural Solution
+                </p>
+                <a href="#" class="btn order-btn"><i class="fas fa-cart-arrow-down"></i> Order Now </a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="slide4">
+                <a href="https://084d3opgihrdvnc8lby5vc1vfv.hop.clickbank.net/">
+                    <img src="{% static 'imgs/foodcraving.png' %}" style="width: 100%; margin-left: 0;" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about-leptitox">
+        <div class="card">
+            <h1 class="card-title">
+                What is Liptitox?
+            </h1>
+            <div class="card-inner">
+                <div class="card-header">
+                    <img src="{% static 'imgs/1-bottle.webp' %}" style="width: 100%;" alt="" class="card-img">
+                </div>
+                <div class="card-content">
+                    <div>
+                        <p>
+                            Liptitox is a proven and scientifically proven dietary supplement that acts and treats
+                            the
+                            cause of leptin and belly fat resistance. These are two major factors that are behind
+                            the
+                            poor weight loss results, no matter what efforts you make.
+                        </p>
+                        <p>This supplement reprograms the hypothalamus and the natural baseline to unlock the body’s
+                            function to eliminate body fat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card-title">
+                How does leptitox works?
+            </h1>
+            <div class="card-inner">
+                <div class="card-header">
+                    <img src="{% static 'imgs/no-food.png' %}" style="width: 100%;" alt="" class="card-img">
+                </div>
+                <div class="card-content">
+                    <span>
+                        <p>
+                            The fat cells in your body secrete a natural hormone called leptin that helps
+                            regulate
+                            hunger.
+                        </p>
+                        <p>
+                            Thissupplement works by detoxifying the body to eliminate specific toxins, which in
+                            turn
+                            helps
+                            thebody’s fat cells to release more leptins. <span class="highlight">This hormone
+                                then
+                                informs
+                                the brain that you should not eat.</span>
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card-title">
+                What are the benefits of Leptitox?
+            </h1>
+            <div class="card-inner">
+                <div class="card-header">
+                    <img src="{% static 'imgs/diet.jpg' %}" style="width: 100%;" alt="" class="card-img img-thumbnail">
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li>
+                            Eliminate fats naturally from the body
+                        </li>
+                        <li>
+                            Maintains blood pressure
+                        </li>
+                        <li>
+                            Combat stress
+                        </li>
+                        <li>
+                            Improves concentration ability
+                        </li>
+                        <li>
+                            The ingredients are 100% natural
+                        </li>
+                        <li>
+                            The price is very affordable
+                        </li>
+                        <li>
+                            Leptitox comes with an iron-clad <span class="highlight">60-day money back
+                                guarantee</span> to help you try out the
+                            risk-free product.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="https://084d3opgihrdvnc8lby5vc1vfv.hop.clickbank.net/" class="btn btn-add-cart"><i
+                class="fas fa-cart-arrow-down"></i> ADD TO CART</a>
+        <br>
+        <div class="swiper-container" style="background-color: #f3f3f3;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="quote">
+                        <br>
+                        <h2 class="quote-title">Energy has increased, cravings have vanished!</h2>
+                        <p>
+                            It wasn't long until I started taking Leptitox that I noticed my cravings had vanished! The
+                            results are so promising, I've lost more weight than I have in a decade and I'm so excited
+                            to
+                            weigh myself every morning!
+                        </p>
+                        <p class="client-name">-Anne <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <br>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">
+                        <img src="" alt="">
+                        <h2 class="quote-title">My daytime tiredness has gone!</h2>
+                        <p>
+                            For years I was searching for the reason I was tired, sluggish and struggled with losing
+                            weight, and
+                            now it all makes sense. Just a few days after taking Leptitox my tiredness disappeared. I
+                            look and
+                            feel younger, and yes I've lost over 23lbs so far, thank you Morgan!
+                        </p>
+                        <p class="client-name">- Peter <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="swiper-slide" id="reviews">
+                    <div class="quote">
+                        <img src="" alt="">
+                        <h2 class="quote-title">Baggy clothes are amazing!</h2>
+                        <p>
+                            Nothing feels as good as a once tight blouse and jeans feeling baggy and loose! I put them
+                            on every
+                            now and again to remind me just how far I've come with Leptitox. My husband is constantly
+                            complimenting me on my new body and asking me whats changed. I haven't told him my secret
+                            yet,
+                            should I?!
+                        </p>
+                        <p class="client-name">- Anonymous <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">
+                        <img src="" alt="">
+                        <h2 class="quote-title">I'm down 4 belt notches without trying</h2>
+                        <p>
+                            For the first time in my life I have targeted fat in areas of my body I thought was
+                            impossible... my sugar cravings are gone and my appetite has decreased dramatically. Thirdly
+                            I feel stronger and fitter. I am even finding movement and exercise easier and more
+                            enjoyable again.
+                        </p>
+                        <p class="client-name">- Michael Bower <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">
+                        <img src="" alt="">
+                        <h2 class="quote-title">Dropped 40 lbs and sleeping better</h2>
+                        <p>
+                            After having 4 kids and being over 50 I fully believed I could never feel young and slim
+                            again, well that is not true thanks to Leptitox! I'm now able to focus better, I'm 100x more
+                            active and my energy and mood are incredible. I am in shock how fast and easy the weight is
+                            melting off now I am in full control of my hunger. I am hooked!
+                        </p>
+                        <p class="client-name">- Germaine C<i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="quote">
+                        <img src="" alt="">
+                        <h2 class="quote-title">My mode is good and I feel fantastic</h2>
+                        <p>
+                            After having 4 kids and being over 50 I fully believed I could never feel young and slim
+                            again, well that is not true thanks to Leptitox! I'm now able to focus better, I'm 100x more
+                            active and my energy and mood are incredible. I am in shock how fast and easy the weight is
+                            melting off now I am in full control of my hunger. I am hooked!
+                        </p>
+                        <p class="client-name">- Clarissa<i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <br>
+        </div>
+    </div>
+
+</main>
+</div>
+{% endblock content %}
