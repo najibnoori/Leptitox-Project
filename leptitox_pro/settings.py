@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'leptitox_pro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'leptitox',
+        'NAME': 'leptitox_proj',
         'USER': 'postgres',
         'PASSWORD': 'johndoe',
         'PORT': 5432,  # ! not in quotes
